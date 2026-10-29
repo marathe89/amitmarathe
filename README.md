@@ -36,7 +36,7 @@ Then open http://localhost:8080. Note that `/about` only works once deployed (Gi
 
 ## Deploy (GitHub Pages)
 
-The site is the GitHub repo `marathe89/amitmarathe-mobile`. Pushing to `main` publishes it.
+The site is the GitHub repo `marathe89/amitmarathe`. Pushing to `main` publishes it.
 
 1. **Pages**: repo → Settings → Pages → Source "Deploy from a branch", branch `main`, folder `/ (root)`.
    Custom domain: `m.amitmarathe.com` (already set by the `CNAME` file).
