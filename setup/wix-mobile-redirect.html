@@ -1,0 +1,26 @@
+<!--
+  Paste this into Wix: Settings → Custom Code → + Add Custom Code
+    - Add Code to Pages: All pages, Load code once
+    - Place Code in: Head
+  Sends phone visitors from www.amitmarathe.com to the mobile site at m.amitmarathe.com.
+  "?view=desktop" / "?view=mobile" lets visitors override; the choice is remembered for a day.
+-->
+<script>
+  (function () {
+    var q = /[?&]view=(mobile|desktop)/.exec(location.search);
+    if (q) document.cookie = "view=" + q[1] + ";domain=.amitmarathe.com;path=/;max-age=86400";
+    var v = q ? q[1] : (/(?:^|; )view=(\w+)/.exec(document.cookie) || [])[1];
+    var mobile = v ? v === "mobile" : /Android|iPhone|iPod|Mobi|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (!mobile) return;
+    // Only pages that exist on the mobile site; other Wix pages keep Wix's own mobile layout.
+    var map = {
+      "/": "/",
+      "/about-me": "/about",
+      "/reimagining-compliance": "/#case-1",
+      "/copy-of-design-system": "/#case-2",
+      "/talento-today": "/#case-3"
+    };
+    var path = location.pathname.replace(/\/$/, "") || "/";
+    if (map[path]) location.replace("https://m.amitmarathe.com" + map[path]);
+  })();
+</script>

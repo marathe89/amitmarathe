@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // Mobile site (m.amitmarathe.com): desktop visitors go to the Wix site at www.amitmarathe.com.
+    // "?view=desktop" / "?view=mobile" lets visitors override; the choice is remembered for a day.
+    (function () {
+      var h = location.hostname;
+      if (h === "localhost" || h === "127.0.0.1") return;
+      var q = /[?&]view=(mobile|desktop)/.exec(location.search);
+      if (q) document.cookie = "view=" + q[1] + ";domain=.amitmarathe.com;path=/;max-age=86400";
+      var v = q ? q[1] : (/(?:^|; )view=(\w+)/.exec(document.cookie) || [])[1];
+      var mobile = v ? v === "mobile" : /Android|iPhone|iPod|Mobi|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (mobile) return;
+      var map = { "/about": "/about-me", "/about.html": "/about-me" };
+      location.replace("https://www.amitmarathe.com" + (map[location.pathname] || "/"));
+    })();
+  </script>
+  <title>About — Amit Marathe</title>
+  <meta name="description" content="About Amit Marathe: 17+ years at the boundary between systems and people. Amit Marathe is a design leader for enterprise AI products. 18 years of enterprise UX turning complex business problems into working products and scalable systems.">
+  <link rel="canonical" href="https://www.amitmarathe.com/about-me">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Amit Marathe">
+  <meta property="og:description" content="I turn complex business problems into working products and scalable systems.">
+  <meta property="og:url" content="https://www.amitmarathe.com/about-me">
+  <meta property="og:image" content="https://m.amitmarathe.com/assets/img/home/portrait.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="/assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=4">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/" aria-label="Amit Marathe — home"><img src="/assets/img/logo.png" alt="AM" width="43" height="34"></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Main">
+      <a href="/">Home</a>
+      <div class="dropdown">
+        <button aria-expanded="false">AI Products ▾</button>
+        <div class="dropdown-menu">
+          <a href="https://workforceintelligence.amitmarathe.com/" target="_blank" rel="noopener">Workforce Intelligence<small>Enterprise workforce analytics</small></a>
+          <a href="https://voyage.amitmarathe.com/" target="_blank" rel="noopener">Travel Concierge<small>Voyage AI</small></a>
+          <a href="https://travelintelligence.amitmarathe.com/" target="_blank" rel="noopener">Travel Intelligence<small>Travel insights platform</small></a>
+        </div>
+      </div>
+      <a href="/#case-studies">Case Studies</a>
+      <a href="/about" aria-current="page">About Me</a>
+      <a href="mailto:marathe8@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container about-hero">
+      <div>
+        <span class="eyebrow">About me</span>
+        <blockquote>“I've spent 17+ years at the boundary between systems and people — first making sense of complex machines for humans. <span class="hl">Now making sense of AI for humans.</span>”</blockquote>
+        <p class="lead" style="margin-top:24px">I'm Amit Marathe, Principal Product Designer at Coforge. I design AI agents, human–AI collaboration models, and enterprise products that move business metrics — building trust, explainability, and control into every interaction.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="mailto:marathe8@gmail.com">Get in touch</a>
+          <a class="btn btn--ghost" href="/assets/files/Amit-Marathe-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+      <div class="rounded"><img src="/assets/img/about/hero.jpg" alt="Pencil sketch of Amit Marathe with his family at the beach" fetchpriority="high"></div>
+    </div>
+  </section>
+
+  <!-- At a glance -->
+  <section class="section section--dark" style="padding-block:clamp(56px,7vw,88px)">
+    <div class="container">
+      <span class="eyebrow">At a glance</span>
+      <div class="glance">
+        <div><div class="stat-num">17+</div><div class="stat-label">Years in design, 11+ in mentoring and leadership roles</div></div>
+        <div><div class="stat-num">17+</div><div class="stat-label">Product discoveries and design-thinking workshops, 38% converted to engagements</div></div>
+        <div><div class="stat-num">4</div><div class="stat-label">Design systems built for enterprise and consumer products</div></div>
+        <div><div class="stat-num">21+</div><div class="stat-label">Design engagements: 14+ enterprise (B2B), 7+ consumer (B2C)</div></div>
+        <div><div class="stat-num">40+</div><div class="stat-label">UX strategy and pre-sales pursuits, 28% success rate</div></div>
+        <div><div class="stat-num">3</div><div class="stat-label">UX practices set up and grown: Encora, Schlumberger, Icertis</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise -->
+  <section class="section">
+    <div class="container">
+      <div class="pillar" style="align-items:start">
+        <div>
+          <span class="eyebrow">What I do</span>
+          <h2>Researcher, interaction designer, usability expert — and team builder</h2>
+          <p>I've built complex B2B and B2C applications as an individual contributor, and set up, grown and mentored UX teams along the way. I believe in an iterative design process: building products and services incrementally, with users involved at every step.</p>
+          <p>Right now I'm focused on <strong>AI as a productivity multiplier</strong> — how AI accelerates traditional product design — and <strong>AI-native product thinking</strong> — how I design AI agents, AI experiences, and human–AI collaboration.</p>
+        </div>
+        <div>
+          <h3>Expertise</h3>
+          <ul class="chips">
+            <li>AI experience design</li><li>Human–AI collaboration</li><li>Agent workflow UX</li><li>Design systems</li>
+            <li>DesignOps</li><li>Enterprise UX</li><li>Product discovery</li><li>UX strategy</li><li>User research</li>
+            <li>Usability testing</li><li>Design thinking</li><li>Team building</li><li>UX practice setup</li><li>Mentoring</li>
+          </ul>
+          <h3 style="margin-top:28px">Beyond projects</h3>
+          <p>Building design teams and UX services, skill development, design reviews, and running design internships, hackathons and Design Week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section section--alt">
+    <div class="container">
+      <span class="eyebrow">Experience</span>
+      <h2>Career journey</h2>
+      <ol class="timeline">
+        <li class="reveal">
+          <div class="tl-when">May 2020 – Present</div>
+          <div class="tl-body">
+            <h3>Principal Product Designer <span>· Coforge, Pune</span></h3>
+            <p>Leading design for AI-native enterprise products across banking, insurance and travel clients.</p>
+            <ul>
+              <li><strong>FDA compliance platform</strong> (Registrar Corp): unified a fragmented compliance ecosystem — dashboard, marketplace, search, tasks and AI insights. <b>+38%</b> user registrations and <b>+34%</b> service subscriptions in the first 2 quarters.</li>
+              <li><strong>Enterprise design system</strong> (Aderant): MUI-based, atomic, documented in Supernova with Storybook — unifying a law-firm software portfolio on one cloud platform.</li>
+              <li><strong>UX strategy &amp; pre-sales</strong>: helped 3 product teams turn modernisation proofs of concept into large engagements.</li>
+              <li><strong>UX practice leader</strong>: team scaling, skills and tooling, design reviews, workshops, hackathons and Design Week.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-when">Oct 2017 – May 2020</div>
+          <div class="tl-body">
+            <h3>UX Architect <span>· Icertis, Pune</span></h3>
+            <p>Led UX for the Icertis Contract Management (CLM) platform and a team of 4 designers, customising it for clients like Daimler, Google, Apple and Transurban.</p>
+            <ul>
+              <li>Set a UX North Star tied to business KPIs such as time-to-contract and clause compliance.</li>
+              <li>Role-based dashboards, guided contract flows and a design system for legal workflows.</li>
+              <li>Raised CSAT on key workflows from <b>27% to 47%</b>.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-when">Jun 2016 – Sep 2017</div>
+          <div class="tl-body">
+            <h3>UX Architect <span>· Schlumberger (SLB), Pune</span></h3>
+            <p>Set up the UX practice at the Pune Technology Centre to modernise legacy oil-and-gas applications.</p>
+            <ul>
+              <li>Delivered 2 MVPs (data integration and discovery) and embedded UX checkpoints into Agile.</li>
+              <li>Started DesignOps and a localised design library aligned with SLB's global design system.</li>
+              <li>Grew the UX team from <b>1 to 5</b>; measured CSAT of 51%.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-when">Apr 2013 – May 2016</div>
+          <div class="tl-body">
+            <h3>Senior UX Lead <span>· Persistent Systems, Pune (for Schlumberger)</span></h3>
+            <p>Designed the Ocean platform and Ocean Store — the framework and marketplace for extending Petrel, Techlog and Studio — for geoscientists, developers and data scientists.</p>
+            <ul>
+              <li><b>+23%</b> weekly active users; 71% CSAT for plugin development.</li>
+              <li>Support tickets down <b>27%</b> internally and <b>31%</b> externally.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-when">May 2011 – Apr 2013</div>
+          <div class="tl-body">
+            <h3>UI Lead <span>· Infosys (Finacle), Bangalore</span></h3>
+            <p>Designed Finacle retail and corporate banking for web and mobile — used by banks like SBI, ICICI and PNB and their millions of customers. Multilingual, WCAG-accessible, with a white-label component library.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-when">Sep 2009 – May 2011</div>
+          <div class="tl-body">
+            <h3>UI Designer <span>· Hettich India, Mumbai</span></h3>
+            <p>Designed Hettplan, a DIY modular-furniture planning tool for homeowners and interior designers. Direct retail sales up <b>11%</b>.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-when">Jul 2008 – Jul 2009</div>
+          <div class="tl-body">
+            <h3>User Researcher (Deputy Manager) <span>· Godrej &amp; Boyce, Mumbai</span></h3>
+            <p>Contextual inquiry with 100+ furniture buyers across Indian cities to redefine market segments and reposition the product portfolio. Sales up <b>17%</b> the following quarter.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Education</span>
+      <h2>Learning never stops</h2>
+      <div class="grid grid-3" style="margin-top:36px">
+        <div class="card reveal"><div class="card-num">In progress</div><h3>Executive MBA</h3><p>S. P. Jain Institute of Management and Research</p></div>
+        <div class="card reveal"><div class="card-num">2006 – 2008</div><h3>Master of Design (M.Des.)</h3><p>Indian Institute of Technology, Delhi</p></div>
+        <div class="card reveal"><div class="card-num">2002 – 2005</div><h3>B.E., Production Engineering</h3><p>Shivaji University, Maharashtra</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <span class="eyebrow">Where I started</span>
+      <h2>From machines to minds</h2>
+      <div class="rounded reveal" style="margin:28px auto 0; max-width:640px"><img src="/assets/img/about/beliefs.jpg" alt="Sketchbook of my design journey: Shivaji University, IIT Delhi, Godrej &amp; Boyce and the impact of research" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Principles</span>
+      <h2>What I believe about design</h2>
+      <div class="grid grid-3" style="margin-top:36px">
+        <div class="card reveal"><div class="card-num">01</div><h3>Research before pixels, always</h3><p>I've never regretted spending more time in research. I've often regretted spending too little. The most expensive thing in design is building the wrong thing beautifully.</p></div>
+        <div class="card reveal"><div class="card-num">02</div><h3>Great UX disappears</h3><p>The best interfaces are the ones people don't notice. They just accomplish what they came to do and leave. Invisibility is the highest compliment a designer can receive.</p></div>
+        <div class="card reveal"><div class="card-num">03</div><h3>Complexity is not the user's problem</h3><p>In 17 years of enterprise design, I've never met a user who wanted complexity. Complexity is always our problem — a systems problem, an organisational problem, a design problem. The user just wants to get things done.</p></div>
+        <div class="card reveal"><div class="card-num">04</div><h3>Design influence grows through business alignment</h3><p>The designers who get a seat at the table are the ones who connect design decisions to business outcomes. I've spent 17 years learning to speak both languages fluently.</p></div>
+        <div class="card reveal"><div class="card-num">05</div><h3>AI should make humans feel more capable</h3><p>Not replaced. Not dependent. Not overwhelmed. Capable. That's the north star I use for every AI experience I design — and it's harder to achieve than it sounds.</p></div>
+        <div class="card reveal"><div class="card-num">06</div><h3>Mentoring is design work too</h3><p>Every designer I've helped grow makes the work better — not just theirs, but mine. Sharing craft, perspective, and feedback is how design culture compounds. It's the highest-leverage work I do.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <span class="eyebrow">Outside the work</span>
+      <h2>The long game</h2>
+      <div class="pillar reveal" style="margin-top:28px">
+        <div>
+          <h3>Cricket — the long game</h3>
+          <p>I'm a passionate cricket fan, and I've always seen parallels between cricket and design. <strong>T20s</strong> are design thinking workshops — fast, constrained, high energy. <strong>One-Day matches</strong> are product discoveries and MVPs — build something real, learn from it. <strong>Test matches</strong> are long-term design programmes — patience, skill, and resilience tested over five days.</p>
+          <p>I see myself as a Test player: built for the long game, where maturity and method matter more than speed.</p>
+          <h3 style="margin-top:32px">Portraits in pencil and colour</h3>
+          <p>I draw portraits — in pencil, poster colours, and mixed media. It's the part of my week with no briefs, no stakeholders, and no design system. Just observation, patience, and a blank page. I think it keeps my eye sharp for what makes a face — or an interface — feel right.</p>
+        </div>
+        <div class="pillar-media"><img src="/assets/img/about/cricket.jpg" alt="Cricket and design illustration" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Photography</span>
+      <h2>Seeing what others miss</h2>
+      <p class="lead">I shoot with a Nikon D5300 — mostly travel and moments with family and friends. Photography taught me something design school didn't: the best composition is often about what you leave out, not what you put in.</p>
+      <div class="gallery" style="margin-top:36px">
+        <img src="/assets/img/photos/photo-01.jpg" alt="Photograph 1 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-02.jpg" alt="Photograph 2 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-03.jpg" alt="Photograph 3 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-04.jpg" alt="Photograph 4 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-05.jpg" alt="Photograph 5 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-06.jpg" alt="Photograph 6 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-07.jpg" alt="Photograph 7 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-08.jpg" alt="Photograph 8 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-09.jpg" alt="Photograph 9 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-10.jpg" alt="Photograph 10 by Amit Marathe" loading="lazy">
+        <img src="/assets/img/photos/photo-11.jpg" alt="Photograph 11 by Amit Marathe" loading="lazy">
+      </div>
+    </div>
+  </section>
+  <section class="section section--alt">
+    <div class="container" style="text-align:center; max-width:760px">
+      <span class="eyebrow">Let's talk</span>
+      <h2>Building an AI product, a design system, or a design team?</h2>
+      <p class="lead" style="margin-inline:auto">I'd love to hear what you're working on.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a class="btn btn--primary" href="mailto:marathe8@gmail.com">Email me</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/amitmarathe/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" role="dialog" aria-label="Photo viewer"><img alt=""></div>
+
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <span class="eyebrow">Contact me</span>
+        <h2>Let's build something people trust.</h2>
+        <a class="footer-email" href="mailto:marathe8@gmail.com">marathe8@gmail.com</a>
+      </div>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/amitmarathe/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM.22 8h4.56v14H.22V8zm7.5 0h4.37v1.92h.06c.61-1.15 2.1-2.37 4.32-2.37 4.62 0 5.47 3.04 5.47 7V22h-4.56v-6.6c0-1.58-.03-3.6-2.2-3.6-2.2 0-2.53 1.72-2.53 3.49V22H7.72V8z"/></svg></a></li>
+        <li><a href="https://facebook.com/amit.marathe8" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a></li>
+        <li><a href="https://www.instagram.com/amit.marathe/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.25.15 4.77 1.69 4.92 4.92.05 1.27.06 1.65.06 4.85s-.01 3.58-.06 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.05-1.65.06-4.8.06s-3.58-.01-4.85-.06c-3.26-.15-4.77-1.7-4.92-4.92C2.2 15.58 2.2 15.2 2.2 12s.01-3.58.06-4.85C2.41 3.92 3.93 2.38 7.15 2.25 8.42 2.2 8.8 2.2 12 2.2zm0 4.6a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4zm0 8.6a3.4 3.4 0 1 1 0-6.8 3.4 3.4 0 0 1 0 6.8zm5.4-9.9a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a></li>
+        <li><a href="https://twitter.com/marathe8" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a></li>
+        <li><a href="https://dribbble.com/marathe8" target="_blank" rel="noopener" aria-label="Dribbble"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.6 4.6a8.5 8.5 0 0 1 1.9 5.3c-.3-.1-3.1-.6-5.9-.3l-.8-1.7c3.1-1.3 4.6-3.1 4.8-3.3zM12 3.5c2.2 0 4.2.8 5.6 2.2-.1.2-1.5 1.9-4.6 3.1-1.4-2.6-3-4.8-3.3-5.1.7-.1 1.5-.2 2.3-.2zm-3.9.9c.2.3 1.8 2.5 3.3 5.1-4.1 1.1-7.8 1.1-8.2 1.1.6-2.8 2.4-5 4.9-6.2zM3.5 12v-.3c.4 0 4.7.1 9.1-1.2l.7 1.5-.3.1c-4.6 1.5-7 5.5-7.2 5.8A8.5 8.5 0 0 1 3.5 12zm8.5 8.5c-2 0-3.8-.7-5.2-1.8.2-.3 2-3.8 7-5.5h.1c1.2 3.1 1.7 5.8 1.8 6.6-1.1.4-2.4.7-3.7.7zm5.2-1.6c-.1-.5-.6-3.1-1.7-6.2 2.6-.4 4.9.3 5.2.4a8.5 8.5 0 0 1-3.5 5.8z"/></svg></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Amit Marathe</span>
+      <span><a href="/assets/files/Amit-Marathe-CV.pdf" target="_blank" rel="noopener">Curriculum Vitae (CV)</a> · <a href="https://www.amitmarathe.com/?view=desktop">Desktop site</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js?v=4" defer></script>
+</body>
+</html>

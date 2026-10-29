@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // Mobile site (m.amitmarathe.com): desktop visitors go to the Wix site at www.amitmarathe.com.
+    // "?view=desktop" / "?view=mobile" lets visitors override; the choice is remembered for a day.
+    (function () {
+      var h = location.hostname;
+      if (h === "localhost" || h === "127.0.0.1") return;
+      var q = /[?&]view=(mobile|desktop)/.exec(location.search);
+      if (q) document.cookie = "view=" + q[1] + ";domain=.amitmarathe.com;path=/;max-age=86400";
+      var v = q ? q[1] : (/(?:^|; )view=(\w+)/.exec(document.cookie) || [])[1];
+      var mobile = v ? v === "mobile" : /Android|iPhone|iPod|Mobi|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (mobile) return;
+      var map = { "/about": "/about-me", "/about.html": "/about-me" };
+      location.replace("https://www.amitmarathe.com" + (map[location.pathname] || "/"));
+    })();
+  </script>
+  <title>Amit Marathe — Design Leader · Enterprise AI Products</title>
+  <meta name="description" content="Amit Marathe is a design leader for enterprise AI products. 18 years of enterprise UX turning complex business problems into working products and scalable systems.">
+  <link rel="canonical" href="https://www.amitmarathe.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Amit Marathe — Design Leader · Enterprise AI Products">
+  <meta property="og:description" content="I turn complex business problems into working products and scalable systems.">
+  <meta property="og:url" content="https://www.amitmarathe.com/">
+  <meta property="og:image" content="https://m.amitmarathe.com/assets/img/home/portrait.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="/assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=4">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/" aria-label="Amit Marathe — home"><img src="/assets/img/logo.png" alt="AM" width="43" height="34"></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Main">
+      <a href="/" aria-current="page">Home</a>
+      <div class="dropdown">
+        <button aria-expanded="false">AI Products ▾</button>
+        <div class="dropdown-menu">
+          <a href="https://workforceintelligence.amitmarathe.com/" target="_blank" rel="noopener">Workforce Intelligence<small>Enterprise workforce analytics</small></a>
+          <a href="https://voyage.amitmarathe.com/" target="_blank" rel="noopener">Travel Concierge<small>Voyage AI</small></a>
+          <a href="https://travelintelligence.amitmarathe.com/" target="_blank" rel="noopener">Travel Intelligence<small>Travel insights platform</small></a>
+        </div>
+      </div>
+      <a href="/#case-studies">Case Studies</a>
+      <a href="/about">About Me</a>
+      <a href="mailto:marathe8@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <span class="eyebrow">Design Leader · Enterprise AI Products</span>
+        <h1>Amit Marathe</h1>
+        <p class="hero-tagline">I turn <strong class="hl">complex business problems</strong> into <strong>working products</strong> and <strong>scalable systems</strong>.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#case-studies">View all case studies →</a>
+          <a class="btn btn--ghost" href="/assets/files/Amit-Marathe-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="/assets/img/home/portrait.png" alt="Portrait of Amit Marathe" width="1600" height="1600" fetchpriority="high">      </div>
+    </div>
+  </section>
+
+  <!-- Pillar 1: Discovery -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="pillar reveal">
+        <div>
+          <span class="eyebrow">Product discovery</span>
+          <h2>From discoveries to <span class="hl">engagement</span></h2>
+          <div class="stats">
+            <div><div class="stat-num">17+</div><div class="stat-label">Product discoveries</div></div>
+            <div><div class="stat-num">+38%</div><div class="stat-label">Discovery → engagement</div></div>
+          </div>
+          <p>The key to successful product discovery is transforming a product idea into a clear business vision by aligning stakeholders around a shared goal and demonstrating early success.</p>
+          <p>This goes beyond creating prototypes — it means implementing solutions, validating their impact, and showcasing measurable business outcomes.</p>
+          <p>AI can accelerate and streamline the design process, but the critical decisions still depend on contextual understanding, ethical judgment, and the ability to build trust with stakeholders.</p>
+          <a class="story-link" href="#case-3"><small>Success story</small>Talent scouting for young football players</a>
+        </div>
+        <div class="pillar-media"><img src="/assets/img/home/talento-hero.png" alt="Talento Today mobile app screens" loading="lazy"></div>
+      </div>
+
+      <div class="pillar pillar--flip reveal">
+        <div>
+          <span class="eyebrow">AI-augmented discovery</span>
+          <h2>Product discovery through an AI lens</h2>
+          <p>As we move from traditional discovery to AI-augmented discovery, I combine strategic design, AI-powered research, and rapid prototyping to compress product discovery from <strong class="hl">6–8 weeks to 2–3 weeks</strong>.</p>
+          <p>By accelerating insight synthesis, exploring solution concepts, and validating ideas through functional prototypes, I help businesses reduce uncertainty, make faster investment decisions, and move toward development with greater confidence.</p>
+        </div>
+        <div>
+          <div class="pillar-media"><img src="/assets/img/home/ai-ux-process.jpg" alt="AI-powered UX process infographic" loading="lazy"></div>
+          <p class="note">*My own crafted experiences, represented using AI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillar 2 & 3: Performance and scale -->
+  <section class="section">
+    <div class="container">
+      <div class="pillar reveal">
+        <div>
+          <span class="eyebrow">Business outcomes</span>
+          <h2>Design that <span class="hl">performs</span></h2>
+          <div class="stats">
+            <div><div class="stat-num">38%</div><div class="stat-label">User registrations</div></div>
+            <div><div class="stat-num">34%</div><div class="stat-label">Service subscriptions</div></div>
+          </div>
+          <p>Enterprise transformation requires balancing immediate business needs with long-term strategic vision. The priority is to deliver short-term improvements that ensure business continuity and success while establishing a scalable foundation for the future — enabling consistent experiences, stronger governance, and sustainable growth across the product portfolio.</p>
+          <a class="story-link" href="#case-1"><small>Success story</small>Reimagining Compliance</a>
+        </div>
+        <div class="pillar-media"><img src="/assets/img/home/compliance-hero.png" alt="Registrar Corp compliance dashboard with AI assistant" loading="lazy"></div>
+      </div>
+
+      <div class="pillar pillar--flip reveal">
+        <div>
+          <span class="eyebrow">Design systems</span>
+          <h2>Systems that <span class="hl">scale</span></h2>
+          <div class="stats">
+            <div><div class="stat-num">100+</div><div class="stat-label">Product team members</div></div>
+            <div><div class="stat-num">3+</div><div class="stat-label">Tech stacks</div></div>
+          </div>
+          <p>Building a design system is the relatively easy part; the real challenge is designing it for long-term business evolution. Decisions must account for the product portfolio, future acquisitions, and organisational growth.</p>
+          <p>Equally critical is establishing seamless documentation, developer handoff, cross-team adoption, and ongoing maintenance. Strong governance ensures the system remains consistent, scalable, and adaptable as the business evolves.</p>
+          <a class="story-link" href="#case-2"><small>Success story</small>Enterprise design system for legal software</a>
+        </div>
+        <div class="pillar-media"><img src="/assets/img/home/design-system-hero.png" alt="Enterprise design system components" loading="lazy"></div>
+      </div>
+
+      <div class="pillar reveal">
+        <div>
+          <span class="eyebrow">Design → engineering</span>
+          <h2>AI that <span class="hl">ships</span></h2>
+          <div class="stats">
+            <div><div class="stat-num">3+</div><div class="stat-label">Enterprise platforms</div></div>
+            <div><div class="stat-num">2+</div><div class="stat-label">Consumer applications</div></div>
+          </div>
+          <p>I bridge design and engineering to turn ideas into deployed products. Combining UX strategy, AI-assisted coding, rapid prototyping, and full-stack tools, I take products from discovery and design through implementation, testing, and deployment.</p>
+          <p>This end-to-end approach accelerates iteration, reduces handoff friction, and transforms design concepts into working solutions faster.</p>
+          <a class="story-link" href="https://workforceintelligence.amitmarathe.com/" target="_blank" rel="noopener"><small>Live product ↗</small>Workforce Intelligence Platform</a>
+          <p style="margin-top:18px">Other applications:
+            <a href="https://voyage.amitmarathe.com/" target="_blank" rel="noopener">Voyage AI</a> ·
+            <a href="https://travelintelligence.amitmarathe.com/" target="_blank" rel="noopener">Travel Intelligence</a>
+          </p>
+        </div>
+        <div>
+          <div class="pillar-media"><img src="/assets/img/home/workforce-intelligence.jpg" alt="Workforce Intelligence Platform" loading="lazy"></div>
+          <div class="pillar-media" style="margin-top:20px"><img src="/assets/img/home/product-workflow.png" alt="Product workflow: align, build, ship" loading="lazy"></div>
+          <p class="note">*Process I crafted and followed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section section--alt">
+    <div class="container" style="max-width:860px">
+      <div class="reveal">
+        <span class="eyebrow">Hey, hi!</span>
+        <h2>I'm a design practitioner partnering with global product teams.</h2>
+        <p class="lead">I turn complex business challenges into meaningful product experiences.</p>
+        <p>With an <strong>M.Des. from IIT Delhi</strong>, I lead design for AI-powered enterprise platforms, staying hands-on by prototyping and building AI agents to explore possibilities, challenge assumptions, and help teams move from ideas to working solutions.</p>
+        <p>Alongside my design leadership journey, I'm pursuing an <strong>Executive MBA at S. P. Jain Institute of Management and Research</strong>, strengthening my business strategy and leadership capabilities.</p>
+        <p>My focus is to bridge design, technology, and business — building scalable products, empowering teams, and connecting design decisions to measurable outcomes.</p>
+        <a class="btn btn--ghost" href="/about">More about me →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">What partners say</span>
+      <h2>Value I bring</h2>
+      <div class="grid grid-3" style="margin-top:36px">
+        <figure class="card quote reveal">
+          <div class="quote-tag">Improve efficiency</div>
+          <blockquote>“Amit played a key role in modernising our compliance platform. His expertise in design systems and UX strategy helped us create a scalable product that improved usability for our global customer base.”</blockquote>
+          <cite><b>Philip Edge</b>CTO, Registrar Corp, US</cite>
+        </figure>
+        <figure class="card quote reveal">
+          <div class="quote-tag">User adoption</div>
+          <blockquote>“Amit partnered closely with our teams to customize the Icertis platform for enterprise scale. His ability to balance design thinking with business needs made him a trusted partner in driving user adoption and innovation.”</blockquote>
+          <cite><b>Karim Khan</b>Manager, GContracts, Google, US</cite>
+        </figure>
+        <figure class="card quote reveal">
+          <div class="quote-tag">Workflow efficiency</div>
+          <blockquote>“Amit Marathe from Icertis brought deep design expertise to Daimler's contract management initiatives. His iterative approach and user focus helped us streamline workflows and increase efficiency across regions.”</blockquote>
+          <cite><b>Jens Schmezer</b>Manager, Procurement Systems, Daimler, Germany</cite>
+        </figure>
+        <figure class="card quote reveal">
+          <div class="quote-tag">Collaboration &amp; co-creation</div>
+          <blockquote>“Amit helped us reimagine complex enterprise workflows. His collaborative approach with engineering and product teams ensured that our solutions were not only intuitive but also technically feasible.”</blockquote>
+          <cite><b>Tod Dixon</b>Product Champion, Schlumberger PUTC, India</cite>
+        </figure>
+        <figure class="card quote reveal">
+          <div class="quote-tag">Design for mass</div>
+          <blockquote>“Amit was instrumental in designing intuitive retail banking experiences for our customers. His leadership in prototyping and testing ensured that new features aligned with customer expectations and business goals.”</blockquote>
+          <cite><b>Arvind Kumar</b>VP – Digital Banking, ICICI Bank, India</cite>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI philosophy -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="pillar reveal">
+        <div>
+          <span class="eyebrow">How I think about AI</span>
+          <p class="statement">I design the space between human intent and AI capability.</p>
+          <p>Most AI products get the model right and the experience wrong. I focus on the layer that makes AI feel trustworthy, controllable, and genuinely useful — not just impressive.</p>
+        </div>
+        <div>
+          <p>I came to AI design through 18 years of enterprise UX — designing contract management platforms, compliance ecosystems, banking systems, and developer tools.</p>
+          <p>In every one of those domains, the biggest UX challenge was never the interface. It was <strong style="color:#fff">cognitive load</strong>: too many decisions, too much information, too little clarity about what matters now. AI, done well, is the answer to that challenge. Done poorly, it's another layer of noise. My job is to make sure it's the former.</p>
+          <p class="pullquote">“The best AI experience is one where the human feels more capable — not replaced, not overwhelmed, not dependent.”</p>
+        </div>
+      </div>
+      <div class="wide-img reveal"><img src="/assets/img/home/capabilities.jpg" alt="Five principles: trust before capability; the human stays in the loop; explainability is a design problem; fail gracefully, fail visibly; design for the full collaboration arc" loading="lazy"></div>
+
+      <div class="capabilities">
+        <span class="eyebrow">Current focus</span>
+        <h2>Currently, I'm focusing on two capabilities</h2>
+        <div class="grid grid-2" style="margin-top:36px">
+          <article class="capability reveal">
+            <div class="capability-top">
+              <span class="capability-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/><path d="M5 3v4M3 5h4"/></svg>
+              </span>
+              <span class="capability-num">01</span>
+            </div>
+            <h3>AI as a productivity multiplier</h3>
+            <p>How AI accelerates and improves traditional product design activities.</p>
+            <ul class="capability-tags"><li>Insight synthesis</li><li>Rapid prototyping</li><li>AI-assisted coding</li></ul>
+          </article>
+          <article class="capability reveal">
+            <div class="capability-top">
+              <span class="capability-icon capability-icon--blue">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.5"/><path d="M9 2.5V6M15 2.5V6M9 18v3.5M15 18v3.5M2.5 9H6M2.5 15H6M18 9h3.5M18 15h3.5"/><path d="M12 9.2l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>
+              </span>
+              <span class="capability-num">02</span>
+            </div>
+            <h3>AI-native product thinking</h3>
+            <p>How I design AI agents, AI experiences, and human–AI collaboration models.</p>
+            <ul class="capability-tags"><li>Trust &amp; explainability</li><li>Human override</li><li>Graceful failure</li></ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case studies -->
+  <section class="section" id="recent-work">
+    <div class="container">
+      <span class="eyebrow">Recent work</span>
+      <h2>Three case studies</h2>
+
+      <!-- Case 1 -->
+      <article class="case" id="case-1">
+        <span class="case-label">Case 1 · AI in practice: enterprise application</span>
+        <h2>Designing an AI-powered compliance platform</h2>
+        <p class="lead">FDA compliance platform modernisation with AI — Registrar Corp × Coforge. I redesigned a fragmented compliance ecosystem, unifying dashboard, marketplace, AI insights, and task management into one cohesive platform.</p>
+        <div class="metric-cards">
+          <div class="metric-card"><div class="stat-num">8</div><div class="stat-label">Distinct AI features designed</div></div>
+          <div class="metric-card"><div class="stat-num">38%</div><div class="stat-label">User registrations in 2 quarters</div></div>
+          <div class="metric-card"><div class="stat-num">+34%</div><div class="stat-label">Service subscriptions</div></div>
+          <div class="metric-card"><div class="stat-num">30K+</div><div class="stat-label">Customers across 190 countries</div></div>
+        </div>
+        <ul class="chips">
+          <li>Smart onboarding with AI</li><li>AI search</li><li>Smart compliance with AI</li><li>AI chatbot</li>
+          <li>Document review with AI</li><li>Data validation with AI</li><li>Image editing with AI</li><li>Smart insights with AI</li>
+        </ul>
+        <div class="wide-img"><img src="/assets/img/home/compliance-ai-features.jpg" alt="Registrar Corp compliance platform annotated with its eight AI features: smart onboarding, AI search, smart compliance, AI chatbot, document review, data validation, image editing and smart insights" width="2000" height="1290" loading="lazy"></div>
+
+        <h3 style="margin-top:48px; font-size:1.6rem">How I evaluate every AI interaction I design</h3>
+        <p>Before any AI feature goes to wireframes, I run it through this five-question framework. It's how I decide what the AI should do, how much autonomy it should have, and what the human always controls.</p>
+        <div class="grid grid-3" style="margin-top:24px">
+          <div class="card"><div class="card-num">01</div><h3>Who benefits?</h3><p>Is this AI serving the user — or the product? If the primary beneficiary is engagement, not the human's goal, I push back.</p></div>
+          <div class="card"><div class="card-num">02</div><h3>What's the cost of being wrong?</h3><p>Low stakes = more AI autonomy. High stakes (compliance, finance, health) = more human confirmation required. Stakes determine autonomy.</p></div>
+          <div class="card"><div class="card-num">03</div><h3>Can the user understand it?</h3><p>If I can't explain the AI's reasoning in plain language to the user, the feature isn't ready. Explainability is a launch requirement, not a roadmap item.</p></div>
+          <div class="card"><div class="card-num">04</div><h3>Can the user override it?</h3><p>Every AI suggestion, action, or automation needs a visible, frictionless override path. Invisible AI is untrustworthy AI.</p></div>
+          <div class="card"><div class="card-num">05</div><h3>How does it fail?</h3><p>I design the failure state before the success state. If the failure experience is confusing or invisible, the feature isn't ready to ship.</p></div>
+        </div>
+      </article>
+
+      <!-- Case 2 -->
+      <article class="case" id="case-2">
+        <span class="case-label">Case 2 · Building a design system for a large enterprise</span>
+        <h2>One design system for a global legal-software portfolio</h2>
+        <p class="lead">Aderant is a global leader in business management software for law firms. With the launch of a new cloud platform, they faced the challenge of unifying a diverse portfolio of products — each with its own UI patterns, built by distributed teams across multiple tech stacks — into a single, consistent, scalable experience. I led the design system from strategy to component rollout.</p>
+        <div class="metric-cards">
+          <div class="metric-card"><div class="stat-num">10+</div><div class="stat-label">Distributed designers across the globe</div></div>
+          <div class="metric-card"><div class="stat-num">100+</div><div class="stat-label">Product design teams</div></div>
+          <div class="metric-card"><div class="stat-num">3</div><div class="stat-label">UI stacks</div></div>
+          <div class="metric-card"><div class="stat-num">150+</div><div class="stat-label">Components, tokens and templates</div></div>
+        </div>
+        <ul class="chips">
+          <li>Faster time-to-market via reusable templates</li><li>Reduced design–dev training costs</li>
+          <li>Centralised updates, fewer regressions</li><li>Better cross-team collaboration</li>
+        </ul>
+        <div class="wide-img"><img src="/assets/img/home/design-system-typography.jpg" alt="Aderant design system documentation: typography tokens, typography scale and the Roboto font family" width="2000" height="1351" loading="lazy"></div>
+        <p>A design system is not a component library. It's a product that your designers and engineers use every day. I design it that way — with governance, adoption strategy, documentation, and a contribution model — not just a Figma file.</p>
+
+        <h3 style="margin-top:48px; font-size:1.6rem">I don't just build components. I build the systems that let organisations design at scale.</h3>
+        <p>Every design system I've built has followed this sequence — adapted for the organisation's maturity, team size, and tech stack. The phases aren't always sequential; at Icertis and Registrar Corp I ran discovery and pilot delivery in parallel to show early ROI while strategy was still being finalised.</p>
+        <div class="grid grid-4" style="margin-top:24px">
+          <div class="card"><div class="phase-tag">Phase 1</div><h3>Audit &amp; inventory</h3><p>UI audit of all existing screens. Component catalogue. Inconsistency map. Identify quick wins vs foundational needs.</p></div>
+          <div class="card"><div class="phase-tag">Phase 2</div><h3>Foundations</h3><p>Tokens first: colour, typography, spacing, radius, elevation. Brand alignment. Dark/light mode strategy. Naming conventions.</p></div>
+          <div class="card"><div class="phase-tag">Phase 3</div><h3>Core components</h3><p>Atoms → molecules → organisms. Figma library + Storybook in sync. Accessibility built into every component, not retrofitted.</p></div>
+          <div class="card"><div class="phase-tag">Phase 4</div><h3>Governance</h3><p>Contribution model, approval workflow, versioning policy, deprecation process. Define before the first PR arrives.</p></div>
+          <div class="card"><div class="phase-tag">Phase 5</div><h3>Documentation</h3><p>Usage guidelines, do/don't examples, prop specs, decision rationale. Supernova or Zeroheight. Engineers and designers as co-authors.</p></div>
+          <div class="card"><div class="phase-tag">Phase 6</div><h3>Pilot adoption</h3><p>Select 1–2 high-visibility teams for first rollout. Learn what breaks. Fix before scaling.</p></div>
+          <div class="card"><div class="phase-tag">Phase 7</div><h3>Scale &amp; evangelise</h3><p>Design showcases, internal workshops, before/after demos. Adoption isn't passive — it's marketed internally.</p></div>
+          <div class="card"><div class="phase-tag">Phase 8</div><h3>Measure &amp; iterate</h3><p>Component adoption rates, version drift, time-to-integrate, UI inconsistency regression. Treat the DS like a live product.</p></div>
+        </div>
+
+        <h3 style="margin-top:48px; font-size:1.6rem">How I think about design systems</h3>
+        <p>Most design system projects fail not because the components are wrong, but because no one designed the system around the people who have to use it. Engineers skip it because it's not in their stack. Designers bypass it because it's easier to build from scratch. PMs deprioritise it because the ROI is invisible until it isn't.</p>
+        <p>I've built four enterprise design systems across different organisations, domains, and team sizes. Every time, the hardest challenge wasn't the token architecture or the component API — it was adoption. Getting 100 engineers across 3 tech stacks to use the same button is a change management problem as much as a design one.</p>
+        <div class="grid grid-3" style="margin-top:24px">
+          <div class="card"><div class="card-num">01</div><h3>Design systems are products</h3><p>Treat them like one. They need a roadmap, a versioning strategy, a contribution model, and adoption metrics. A Figma file is not a design system.</p></div>
+          <div class="card"><div class="card-num">02</div><h3>Governance before scale</h3><p>The moment more than one team uses a design system, you need governance. Who can contribute? Who approves changes? What happens when a component breaks? Define this before you have a crisis.</p></div>
+          <div class="card"><div class="card-num">03</div><h3>Tokens are the real foundation</h3><p>Components are visible. Tokens are structural. A well-defined token architecture — spacing, colour, radius, elevation — is what makes a design system portable across products and themes.</p></div>
+          <div class="card"><div class="card-num">04</div><h3>Figma ↔ code parity matters</h3><p>The distance between a Figma component and its code equivalent is where inconsistency lives. I work closely with frontend leads to keep Figma and Storybook in sync — not as a handoff, but as a shared source of truth.</p></div>
+          <div class="card"><div class="card-num">05</div><h3>Documentation is a design deliverable</h3><p>Every component needs usage guidelines, do/don't examples, accessibility notes, and a decision rationale. Documentation that lives only in designers' heads doesn't scale.</p></div>
+          <div class="card"><div class="card-num">06</div><h3>Adoption is designed in</h3><p>I design the onboarding experience for the design system itself — how do engineers discover components? How do designers contribute? Adoption is not a training problem. It's a UX problem.</p></div>
+        </div>
+      </article>
+
+      <!-- Case 3 -->
+      <article class="case" id="case-3">
+        <span class="case-label">Case 3 · Progressive mobile application for B2C</span>
+        <h2>Taking an idea to a shipped mobile app</h2>
+        <p class="lead">The fastest path to a credible MVP isn't more features — it's a tight loop of ecosystem research, a single validated core action, and instrumented testing from the first release.</p>
+        <p>Talento Today went from founder vision to a successfully validated beta by treating research and analytics as part of the design process, not a step before or after it.</p>
+        <div class="metric-cards">
+          <div class="metric-card"><div class="stat-num">30M</div><div class="stat-label">User base</div></div>
+          <div class="metric-card"><div class="stat-num">3000+</div><div class="stat-label">Users in the first 6 months</div></div>
+          <div class="metric-card"><div class="stat-num">#2</div><div class="stat-label">Sports app in Germany</div></div>
+          <div class="metric-card"><div class="stat-num">1</div><div class="stat-label">Designer, full ownership: research to visual design</div></div>
+        </div>
+        <div class="wide-img"><img src="/assets/img/home/talento-screens.png" alt="Talento Today app screens" loading="lazy"></div>
+        <p>What it actually takes to go from a founder's idea to a validated, beta-released consumer app — condensed from designing Talento Today as sole product designer for an early-stage German startup.</p>
+        <div class="grid grid-4" style="margin-top:24px">
+          <div class="card"><div class="phase-tag">Phase 1</div><h3>Map the ecosystem</h3><p>Workshop with founders + engineering lead. Roles, workflows, pain points — before any screens. <strong>5 days</strong> to map the entire ecosystem.</p></div>
+          <div class="card"><div class="phase-tag">Phase 2</div><h3>Validate with users</h3><p><strong>12 interviews</strong> across 3 countries, real personas, 4 competitor products benchmarked.</p></div>
+          <div class="card"><div class="phase-tag">Phase 3</div><h3>Design the core loop</h3><p>One central action across all <strong>3 personas</strong>, designed as one connected system. Reusable components from day one.</p></div>
+          <div class="card"><div class="phase-tag">Phase 4</div><h3>Test, measure, ship</h3><p>On-field testing + analytics before and after beta release.</p></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- All projects -->
+  <section class="section section--alt" id="case-studies">
+    <div class="container">
+      <span class="eyebrow">Portfolio</span>
+      <h2>All case studies</h2>
+      <div class="grid grid-3" style="margin-top:36px">
+        <a class="project" href="#case-1"><h3>Reimagining Compliance</h3><p>A scalable UX transformation for the enterprise.</p><span class="more">Read case →</span></a>
+        <a class="project" href="#case-2"><h3>Enterprise Design System</h3><p>A comprehensive design system for legal enterprise software.</p><span class="more">Read case →</span></a>
+        <a class="project" href="#case-3"><h3>Talent Scouting for Young Football Players</h3><p>A platform for aspiring youngsters to play professionally.</p><span class="more">Read case →</span></a>
+        <div class="project"><h3>Mental Wellbeing Assistant</h3><p>Adolescent self-discovery and self-care (Lucero).</p></div>
+        <div class="project"><h3>EV Infrastructure Marketplace</h3><p>Marketplace for the EV charging infrastructure ecosystem (Vahanomy).</p></div>
+        <div class="project"><h3>Improving CSAT of Contract Management</h3><p>Enterprise platform for contract management (Icertis).</p></div>
+        <div class="project"><h3>Complete Home Buying Experience</h3><p>Home buying experience for consumers and service providers (Souqh).</p></div>
+        <div class="project"><h3>Mind Body Spirit Assistant</h3><p>Mobile application for a mind–body–spirit assistant.</p></div>
+        <div class="project"><h3>Engagement for Sports Fans</h3><p>Web and mobile app for stories, memories and engagement.</p></div>
+        <div class="project"><h3>Asset Tracking</h3><p>Web and mobile application for asset tracking (Troverlo).</p></div>
+        <div class="project"><h3>Student Alumni Networking</h3><p>Mobile app for networking university students and alumni (Angelgrad).</p></div>
+        <div class="project"><h3>Laboratory Information Management System</h3><p>Enterprise application for laboratory management.</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <span class="eyebrow">Contact me</span>
+        <h2>Let's build something people trust.</h2>
+        <a class="footer-email" href="mailto:marathe8@gmail.com">marathe8@gmail.com</a>
+      </div>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/amitmarathe/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM.22 8h4.56v14H.22V8zm7.5 0h4.37v1.92h.06c.61-1.15 2.1-2.37 4.32-2.37 4.62 0 5.47 3.04 5.47 7V22h-4.56v-6.6c0-1.58-.03-3.6-2.2-3.6-2.2 0-2.53 1.72-2.53 3.49V22H7.72V8z"/></svg></a></li>
+        <li><a href="https://facebook.com/amit.marathe8" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a></li>
+        <li><a href="https://www.instagram.com/amit.marathe/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.25.15 4.77 1.69 4.92 4.92.05 1.27.06 1.65.06 4.85s-.01 3.58-.06 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.05-1.65.06-4.8.06s-3.58-.01-4.85-.06c-3.26-.15-4.77-1.7-4.92-4.92C2.2 15.58 2.2 15.2 2.2 12s.01-3.58.06-4.85C2.41 3.92 3.93 2.38 7.15 2.25 8.42 2.2 8.8 2.2 12 2.2zm0 4.6a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4zm0 8.6a3.4 3.4 0 1 1 0-6.8 3.4 3.4 0 0 1 0 6.8zm5.4-9.9a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a></li>
+        <li><a href="https://twitter.com/marathe8" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a></li>
+        <li><a href="https://dribbble.com/marathe8" target="_blank" rel="noopener" aria-label="Dribbble"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.6 4.6a8.5 8.5 0 0 1 1.9 5.3c-.3-.1-3.1-.6-5.9-.3l-.8-1.7c3.1-1.3 4.6-3.1 4.8-3.3zM12 3.5c2.2 0 4.2.8 5.6 2.2-.1.2-1.5 1.9-4.6 3.1-1.4-2.6-3-4.8-3.3-5.1.7-.1 1.5-.2 2.3-.2zm-3.9.9c.2.3 1.8 2.5 3.3 5.1-4.1 1.1-7.8 1.1-8.2 1.1.6-2.8 2.4-5 4.9-6.2zM3.5 12v-.3c.4 0 4.7.1 9.1-1.2l.7 1.5-.3.1c-4.6 1.5-7 5.5-7.2 5.8A8.5 8.5 0 0 1 3.5 12zm8.5 8.5c-2 0-3.8-.7-5.2-1.8.2-.3 2-3.8 7-5.5h.1c1.2 3.1 1.7 5.8 1.8 6.6-1.1.4-2.4.7-3.7.7zm5.2-1.6c-.1-.5-.6-3.1-1.7-6.2 2.6-.4 4.9.3 5.2.4a8.5 8.5 0 0 1-3.5 5.8z"/></svg></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Amit Marathe</span>
+      <span><a href="/assets/files/Amit-Marathe-CV.pdf" target="_blank" rel="noopener">Curriculum Vitae (CV)</a> · <a href="https://www.amitmarathe.com/?view=desktop">Desktop site</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js?v=4" defer></script>
+</body>
+</html>
