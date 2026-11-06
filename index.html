@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=4">
+  <link rel="stylesheet" href="/css/style.css?v=7">
 </head>
 <body>
 
@@ -62,12 +62,21 @@
   <section class="hero">
     <div class="container">
       <div>
-        <span class="eyebrow">Design Leader · Enterprise AI Products</span>
-        <h1>Amit Marathe</h1>
-        <p class="hero-tagline">I turn <strong class="hl">complex business problems</strong> into <strong>working products</strong> and <strong>scalable systems</strong>.</p>
+        <h1 class="hero-name">Amit Marathe</h1>
+        <p class="hero-creds">M.Des. - IIT Delhi, M.B.A. - S P Jain Institute of Management</p>
+        <span class="eyebrow hero-kicker"><span class="k-design">Design</span> <span class="k-x">X</span> <span class="k-business">Business</span></span>
+        <p class="hero-tagline">I turn complex business problems into working products and scalable systems</p>
         <div class="btn-row">
           <a class="btn btn--primary" href="#case-studies">View all case studies →</a>
           <a class="btn btn--ghost" href="/assets/files/Amit-Marathe-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <div class="live-products">
+          <p class="live-label"><span class="live-dot" aria-hidden="true"></span>3 AI products live — try them</p>
+          <div class="live-list">
+            <a class="live-card" href="/case-studies/workforce-intelligence-case-study.html" target="_blank" rel="noopener"><strong>Workforce Intelligence</strong><small>Enterprise workforce analytics</small><span class="live-arrow" aria-hidden="true">↗</span></a>
+            <a class="live-card" href="/case-studies/voyage-case-study.html" target="_blank" rel="noopener"><strong>Voyage AI</strong><small>AI travel concierge</small><span class="live-arrow" aria-hidden="true">↗</span></a>
+            <a class="live-card" href="/case-studies/travel-intelligence-case-study.html" target="_blank" rel="noopener"><strong>Travel Intelligence</strong><small>Travel insights platform</small><span class="live-arrow" aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </div>
       <div class="hero-portrait">
@@ -176,6 +185,26 @@
         <p>With an <strong>M.Des. from IIT Delhi</strong>, I lead design for AI-powered enterprise platforms, staying hands-on by prototyping and building AI agents to explore possibilities, challenge assumptions, and help teams move from ideas to working solutions.</p>
         <p>Alongside my design leadership journey, I'm pursuing an <strong>Executive MBA at S. P. Jain Institute of Management and Research</strong>, strengthening my business strategy and leadership capabilities.</p>
         <p>My focus is to bridge design, technology, and business — building scalable products, empowering teams, and connecting design decisions to measurable outcomes.</p>
+        <div class="ledger" role="group" aria-labelledby="ledger-title">
+          <p class="ledger-title" id="ledger-title">Impact ledger <span>Design × business</span></p>
+          <dl class="ledger-row">
+            <div class="ledger-cell">
+              <dt>Business</dt>
+              <dd class="ledger-num">PGPGM</dd>
+              <dd class="ledger-label">Executive MBA, S. P. Jain Institute of Management and Research</dd>
+            </div>
+            <div class="ledger-cell">
+              <dt>Pre-sales</dt>
+              <dd class="ledger-num">28%</dd>
+              <dd class="ledger-label">Win rate across 40+ UX strategy and pre-sales pursuits</dd>
+            </div>
+            <div class="ledger-cell">
+              <dt>Practice building</dt>
+              <dd class="ledger-num">3</dd>
+              <dd class="ledger-label">UX practices built from scratch: Encora, Schlumberger, Icertis</dd>
+            </div>
+          </dl>
+        </div>
         <a class="btn btn--ghost" href="/about">More about me →</a>
       </div>
     </div>
@@ -413,6 +442,6 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=4" defer></script>
+<script src="/js/main.js?v=5" defer></script>
 </body>
 </html>
